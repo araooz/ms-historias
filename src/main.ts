@@ -6,8 +6,8 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule, { cors: true });
 
   const config = new DocumentBuilder()
-    .setTitle('MS Historias')
-    .setDescription('API de historias de mascotas')
+    .setTitle('Historial de Mascotas')
+    .setDescription('API de historial de mascotas')
     .setVersion('1.0.0')
     .build();
   const doc = SwaggerModule.createDocument(app, config);
